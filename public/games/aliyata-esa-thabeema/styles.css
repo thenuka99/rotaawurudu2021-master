@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    background-color:wheat;
+    background-image: url(../bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+canvas {
+    border: 1px solid #d3d3d3;
+    background-image: url("elephant.jpg");
+    margin: 0 auto;
+    margin-top: 2%;
+}

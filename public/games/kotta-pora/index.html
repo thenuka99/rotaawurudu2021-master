@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta property="og:title" content="Awurudu 2021 | RotaractMora" />
+    <meta property="og:description" content="Cast 4 Online අවුරුදු කලාපය" />
+    <meta property="og:image" content="https://awurudu.rotaractmora.org/awurudu-logofav.png" />
+    <meta property="og:url" content="https://awurudu.rotaractmora.org" />
+    <meta name="keywords" content="Awurudu, Awurudu 2021, rotaract, rotaractmora, uom, mora, rotaract awurudu" >
+    <meta name="description" content="Cast 4 Online අවුරුදු කලාපය" />
+    <link rel="apple-touch-icon" href="/awurudu-logofav.png" />
+    <link rel="icon" href="/awurudu-logofav.png" />
+    <title>Kotta Pora</title>
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="row" style="display: flex; justify-content: center;">
+                <div class="col-lg-8">
+                    <p>&nbsp;</p>
+                    <h2 class="text-center">Kotta Pora</h2><br>
+                    <img src="trunk.png" class="trunk img-fluid" style="max-width: 100%;" v-show="!ended1 && !ended2">
+                    <div class="row" style="display: flex; justify-content: center;" v-show="!ended1 && !ended2">
+                        <div class="col-6 col-sm-4">
+                            <div id="bot" class="bot_p1" v-on:click="punch" v-bind:class="{burst1: ended2}"></div>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <div class="player_p1" v-on:click="punch" v-bind:class="{player_p2: classPlayer}" v-bind:class="{burst2: ended1}" title="Click Here To punch"></div>
+                        </div>
+                    </div>
+                    <div class="row" style="display: flex; justify-content: center;" v-show="ended1 || ended2">
+                        <div v-show="ended1" class="col">
+                            <div class="burst1" style="color: blue;">You Won</div>
+                        </div>
+                        <div v-show="ended2" class="col">
+                            <div class="burst1" style="color: red;">You Lost</div>
+                        </div>
+                    </div>
+                    <table id="tbl">
+                        <tr>
+                            <td align="center">
+                                <div id="health1">
+                                    <div v-bind:style="{ width: health1+'%'}"></div>
+                                </div>
+                                Health (Bot)
+                            </td>
+                            <td align="center">
+                                <div id="health2">
+                                    <div v-bind:style="{ width: health2+'%'}"></div>
+                                </div>
+                                Health (Player)
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div id="timer" class="text-center">
+                        <label>Time : {{ seconds }} s</label>
+                    </div>
+
+                    <hr>
+
+
+                    <div id="controls">
+                        <button v-on:click="start" v-show="!started" class="btn btn-success">Start</button>
+                        <button v-on:click="restart" class="btn btn-danger">Restart</button>
+                    </div>
+
+                    <div id="audio">
+                        <audio ref="audio" volume="1" preload="auto">
+                            <source src="cheer.mp3">
+                        </audio>
+                        <audio ref="booaudio" volume="1" preload="auto">
+                            <source src="boo.wav">
+                        </audio>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+</html>

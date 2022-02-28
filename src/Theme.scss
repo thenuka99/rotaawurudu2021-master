@@ -1,0 +1,11 @@
+$white: #ffffff;
+$black: #000000;
+
+$DarkGrey: #141414;
+$LightGrey: #363636;
+
+@mixin flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

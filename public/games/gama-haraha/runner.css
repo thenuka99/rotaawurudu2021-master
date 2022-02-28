@@ -1,0 +1,68 @@
+@font-face {
+     font-family: PressStart2P;
+     src: url('font/PressStart2P.ttf');
+}
+html, body {
+	background-color: black;
+	/*font-family: "Helvetica Neue", HelveticaNeue, "Helvetica-Neue", Helvetica, "BBAlpha Sans", sans-serif;*/
+	font-family: PressStart2P;
+	padding: 0;
+	height: 100%;
+	margin: 0;
+	line-height: 1.25em;
+	font-size: 0.9em;
+	background-image: url(../bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.center-helper {
+	height: 100%;
+	text-align: center;
+	white-space: nowrap;
+	pointer-events: none;
+	user-select: none;
+}
+.center-helper:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	/*margin-right: -0.25em;*/
+	margin-right: -1em; /* Adjusts for spacing */
+}
+.main {
+	/*display: inline-block;*/
+	display: none;
+	vertical-align: middle;
+	background-color: #8bc34a;
+}
+.score {
+
+}
+.msg {
+	display: inline-block;
+	vertical-align: middle;
+	background-color: white;
+	padding: 20px;
+	white-space: normal;
+}
+.noselect {
+	-webkit-touch-callout: none;	/* iOS Safari */
+	-webkit-user-select: none;		/* Chrome/Safari/Opera */
+	-khtml-user-select: none;		/* Konqueror */
+	-moz-user-select: none;			/* Firefox */
+	-ms-user-select: none;			/* Internet Explorer/Edge */
+	user-select: none;				/* Non-prefixed version, currently not supported by any browser */
+}
+.debug {
+	left: 0;
+	top: 0;
+	position: absolute;
+	padding: 5px 10px;
+	background: black;
+	color: green;
+	opacity: 0.75;
+	font-size: 16px;
+	min-width: 200px;
+	visibility: hidden;
+}

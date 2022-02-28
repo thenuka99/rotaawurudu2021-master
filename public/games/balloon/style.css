@@ -1,0 +1,46 @@
+﻿body{
+    text-align: center;
+    background-color:wheat;
+    background-image: url(../bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    font-weight: bolder;
+    color: #fff;
+    background-color: #474224;
+}
+
+div[title="Click Here To fill The Balloon"] {
+    height: 60vh;
+    margin: 0 auto;
+    background: url(Balloonnew.png) center no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+}
+
+div[title="Click Here To fill The Balloon"].burst {
+    background: url(pop.png) center no-repeat;
+}
+
+#health {
+    width: 100%;
+    border: 2px solid #000;
+    margin: 20px auto 20px auto;
+}
+
+#health div {
+    height: 20px;
+    background: red;
+}
+
+#controls {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#audio {
+    display: none;
+}

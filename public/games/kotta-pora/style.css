@@ -1,0 +1,152 @@
+﻿body{
+    background-color:wheat;
+    background-image: url(../bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+h2 {
+    font-weight: bolder;
+}
+
+
+/* #balloon {
+    height: 60vh;
+    margin: 0 auto;
+    background: url(Balloonnew.png) center no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+} */
+
+.player_p1 {
+    height: 166px;
+    margin: 0 auto;
+    position: relative;
+    background: url(Man2_p1.png) right no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+}
+
+.player_p2 {
+    height: 166px;
+    margin: 0 auto;
+    position: relative;
+    background: url(Man2_p2.png) right no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+}
+
+.bot_p1 {
+    height: 166px;
+    margin: 0 auto;
+    position: relative;
+    background: url(Man1_p2.png) right no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+    transition: 0.3s;
+}
+
+.bot_p2 {
+    background-image: url(Man1_p1.png) !important;
+}
+
+.trunk {
+    position: absolute;
+    margin-top: 32px;
+}
+
+.burst1 {
+    font-size: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#health1 {
+    width: 100%;
+    border: 2px solid #000;
+    text-align: left;
+}
+
+#health1 div {
+    width: 100%;
+    height: 20px;
+    background: red;
+}
+
+#health2 {
+    width: 100%;
+    border: 2px solid #000;
+    text-align: left;
+}
+
+#health2 div {
+    height: 20px;
+    background: red;
+}
+
+#controls {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#audio {
+    display: none;
+}
+
+#tbl {
+    margin-top: 160px;
+    width: 100%;
+    padding: 0px;
+    border: 0px;
+}
+
+#tbl tr td {
+    padding: 20px;
+    width: 50%;
+}
+
+.col-lg-8 {
+    width: 100%;
+}
+
+.col-sm-4 {
+    width: 33.33333333%;
+}
+
+@media(min-width: 992px) {
+    .col-lg-8 {
+        width: 66.66666667%;
+    }
+}
+
+@media(min-width: 768px) {
+    .col-sm-4 {
+        width: 33.33333333%;
+    }
+}
+
+@media(max-width: 540px) {
+    .player_p1,
+    .player_p2,
+    .bot_p1,
+    .bot_p2 {
+        height: 140px;
+    }
+    #tbl {
+        margin-top: 120px;
+    }
+}
+
+@media(max-width: 420px) {
+    .player_p1,
+    .player_p2,
+    .bot_p1,
+    .bot_p2 {
+        height: 120px;
+    }
+    #tbl {
+        margin-top: 90px;
+    }
+}

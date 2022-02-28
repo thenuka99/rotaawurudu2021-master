@@ -1,0 +1,45 @@
+.game__card {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+  
+    .game__image {
+        margin: auto;
+        margin-top: 3vh;
+        align-self: center;
+        position: relative;
+        width:400px;
+        height: 400px;
+  
+    .game__gname__container {
+        margin: auto;
+        display: flex;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(99, 99, 99, 0.707);
+        width: 80%;
+  
+    .game__gname {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 50px;
+        color: rgb(214, 202, 22);
+              
+    }}
+  
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        border-radius: 15%;
+            
+    }}
+  
+    }
+
+  

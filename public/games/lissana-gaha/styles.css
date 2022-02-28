@@ -1,0 +1,25 @@
+canvas {
+    border: 1px solid #d3d3d3;
+    background-image: url("background.png");
+    background-position: center;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+    background-image: url(../bg.jpg);
+    background-size: cover;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+}
+
+#marks {
+    font-size: x-large;
+}

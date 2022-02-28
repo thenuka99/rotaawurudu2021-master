@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Balloon Pipirima</title>
+
+    <meta property="og:title" content="Awurudu 2021 | RotaractMora" />
+    <meta property="og:description" content="Cast 4 Online අවුරුදු කලාපය" />
+    <meta property="og:image" content="https://awurudu.rotaractmora.org/awurudu-logofav.png" />
+    <meta property="og:url" content="https://awurudu.rotaractmora.org" />
+    <meta name="keywords" content="Awurudu, Awurudu 2021, rotaract, rotaractmora, uom, mora, rotaract awurudu" >
+    <meta name="description" content="Cast 4 Online අවුරුදු කලාපය" />
+    <link rel="apple-touch-icon" href="/awurudu-logofav.png" />
+    <link rel="icon" href="/awurudu-logofav.png" />
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <p>&nbsp;</p>
+                    <h2 class="text-center">Balloon Pipirima</h2>
+
+                    <div v-bind:style="{ width: health+10>100? '100%' : health+10+'%'}" v-on:click="punch" v-bind:class="{burst: ended}" title="Click Here To fill The Balloon"></div>
+
+                    <div id="health">
+                        <div v-bind:style="{ width: health+'%'}"></div>
+                    </div>
+
+                    <div id="timer" class="text-center">
+                        <label>Time : {{ seconds }} s</label>
+                    </div>
+
+                    <div id="controls">
+                        <button v-on:click="start" v-show="!ended" class="btn btn-success">Start</button>
+                        <button v-on:click="restart" class="btn btn-danger">Restart</button>
+                    </div>
+
+                    <div id="audio">
+                        <audio ref="audio" volume="1" preload="auto">
+                            <source src="pop.mp3">
+                        </audio>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+</html>

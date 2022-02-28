@@ -1,0 +1,19 @@
+canvas{
+    border: 1px solid #d3d3d3; 
+    width: 650px;
+    height: 450px;
+    background-image: url("./background.png");
+}
+
+.LGbody{
+    text-align: center;
+}
+
+.Climb{
+    width: 100px;
+    height: 100px;
+}
+
+#marks{
+    font-size: x-large;
+}

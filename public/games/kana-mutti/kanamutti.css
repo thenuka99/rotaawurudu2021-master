@@ -1,0 +1,7 @@
+body{
+    text-align: center;
+    background-color:wheat;
+    background-image: url(../bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
